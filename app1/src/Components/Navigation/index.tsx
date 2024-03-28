@@ -1,10 +1,12 @@
 import classnames from "classnames";
 
-const Navigation = () => {
+const Navigation = ({ accessToken }) => {
   return (
     <nav className="flex items-center justify-start flex-wrap bg-black p-6">
       <div className="flex items-center flex-shrink-0 text-white mr-6">
-        <span className="font-semibold text-xl tracking-tight">Example</span>
+        <span className="font-semibold text-xl tracking-tight">
+          Example {accessToken}
+        </span>
       </div>
       <div
         className={classnames(
