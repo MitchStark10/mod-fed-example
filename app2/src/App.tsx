@@ -1,13 +1,9 @@
-import React from "react";
-
-import { Button } from "Components/Button";
-
 import "./Styles/tailwind.css";
 
 const App = () => (
-    <div className="m-3">
-        <Button className="!bg-blue-600" data-testid="helloFriendsButton">Hello Friends 🚀</Button>
-    </div>
+  <div className="m-3">
+    <p>This is just a remote. No functionality to see.</p>
+  </div>
 );
 
 export default App;
