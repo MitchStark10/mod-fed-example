@@ -3,7 +3,7 @@ const deps = require("./package.json").dependencies;
 module.exports = {
   name: "app2",
   exposes: {
-    "./Button": "./src/Components/Button",
+    "./modules": "./src/Modules",
   },
   filename: "remoteEntry.js",
   shared: {

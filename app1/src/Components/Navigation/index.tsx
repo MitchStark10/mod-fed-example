@@ -11,10 +11,13 @@ const Navigation = () => {
           "w-full block lg:flex lg:items-center lg:w-auto gap-2"
         )}
       >
-        <div className="text-sm ">
+        <div className="text-sm">
           <a
             href="/"
-            className="block mt-4 lg:inline-block lg:mt-0 text-green-200 hover:text-white mr-4"
+            className={classnames(
+              "block mt-4 lg:inline-block lg:mt-0 text-green-200 hover:text-white mr-4",
+              { underline: window.location.pathname === "/" }
+            )}
           >
             Home
           </a>
@@ -22,7 +25,12 @@ const Navigation = () => {
         <div className="text-sm ">
           <a
             href="/module1"
-            className="block mt-4 lg:inline-block lg:mt-0 text-green-200 hover:text-white mr-4"
+            className={classnames(
+              "block mt-4 lg:inline-block lg:mt-0 text-green-200 hover:text-white mr-4",
+              {
+                underline: window.location.pathname.startsWith("/module1"),
+              }
+            )}
           >
             Module 1
           </a>
@@ -31,7 +39,12 @@ const Navigation = () => {
         <div className="text-sm ">
           <a
             href="/module2"
-            className="block mt-4 lg:inline-block lg:mt-0 text-green-200 hover:text-white mr-4"
+            className={classnames(
+              "block mt-4 lg:inline-block lg:mt-0 text-green-200 hover:text-white mr-4",
+              {
+                underline: window.location.pathname.startsWith("/module2"),
+              }
+            )}
           >
             Module 2
           </a>
