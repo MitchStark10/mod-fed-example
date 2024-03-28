@@ -16,5 +16,13 @@ module.exports = {
       singleton: true,
       requiredVersion: deps["react-dom"],
     },
+    "react-router": {
+      singleton: true,
+      requiredVersion: deps["react-router"],
+    },
+    "react-router-dom": {
+      singleton: true,
+      requiredVersion: deps["react-router-dom"],
+    },
   },
 };

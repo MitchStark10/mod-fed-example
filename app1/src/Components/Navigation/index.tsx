@@ -1,6 +1,9 @@
 import classnames from "classnames";
+import { useLocation } from "react-router-dom";
 
 const Navigation = ({ accessToken }) => {
+  const location = useLocation();
+
   return (
     <nav className="flex items-center justify-start flex-wrap bg-black p-6">
       <div className="flex items-center flex-shrink-0 text-white mr-6">
@@ -18,7 +21,7 @@ const Navigation = ({ accessToken }) => {
             href="/"
             className={classnames(
               "block mt-4 lg:inline-block lg:mt-0 text-green-200 hover:text-white mr-4",
-              { underline: window.location.pathname === "/" }
+              { underline: location.pathname === "/" }
             )}
           >
             Home
@@ -30,7 +33,7 @@ const Navigation = ({ accessToken }) => {
             className={classnames(
               "block mt-4 lg:inline-block lg:mt-0 text-green-200 hover:text-white mr-4",
               {
-                underline: window.location.pathname.startsWith("/module1"),
+                underline: location.pathname.startsWith("/module1"),
               }
             )}
           >
@@ -44,7 +47,7 @@ const Navigation = ({ accessToken }) => {
             className={classnames(
               "block mt-4 lg:inline-block lg:mt-0 text-green-200 hover:text-white mr-4",
               {
-                underline: window.location.pathname.startsWith("/module2"),
+                underline: location.pathname.startsWith("/module2"),
               }
             )}
           >

@@ -21,15 +21,15 @@ const App = () => {
 
   return (
     <>
-      <Navigation accessToken={accessToken} />
       <Router>
+        <Navigation accessToken={accessToken} />
         <Routes>
           <Route
-            path="/module1"
+            path="module1/*"
             element={<Module1 accessToken={accessToken} />}
           />
           <Route
-            path="/module2"
+            path="module2"
             element={<Module2 accessToken={accessToken} />}
           />
           <Route path="/" element={<Home />} />
