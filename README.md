@@ -14,3 +14,5 @@ Key Files:
 - `app2/src/Modules/Module2.tsx` - Remote module that provides a basic example of nested content.
 - `app1/modulefederation.config.js` - Important notes with the module federation config:
   - We need singletons for React & React Router. Both of these libraries require a single instance to be used across all modules. (An equivalent setup exists in the remote's `app2/modulefederation.config.js` file.)
+
+Credit to https://github.com/DalSoft/create-react-app-webpack-5-module-federation-tailwind-typeScript for the initial repository.
