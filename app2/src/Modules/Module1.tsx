@@ -33,6 +33,10 @@ const Module1BaseContent = memo(() => {
 });
 
 export const Module1 = (props: RemoteModuleProps) => (
+  // IMPORTANT: You cannot use the BrowserRouter inside a remote module if the host
+  // has already instantiated reacr-router. Be sure to use a "singleton" dependency
+  // attribute for react-router and react-router-dom to make sure that the host
+  // & remote are using the same instance.
   <ModuleWrapper {...props}>
     <Routes>
       <Route path="deeplink" element={<Module1DeepLinkContent />} />
