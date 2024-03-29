@@ -14,5 +14,5 @@ export const ModuleWrapper: FC<RemoteModuleProps> = ({
     console.log("Recevied access token in remote:", accessToken);
   }, [accessToken]);
 
-  return <div className="p-4">{children}</div>;
+  return <section className="p-4">{children}</section>;
 };

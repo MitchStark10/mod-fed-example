@@ -8,7 +8,7 @@ const Navigation = ({ accessToken }) => {
     <nav className="flex items-center justify-start flex-wrap bg-black p-6">
       <div className="flex items-center flex-shrink-0 text-white mr-6">
         <span className="font-semibold text-xl tracking-tight">
-          Example {accessToken}
+          Access token change count: {accessToken}
         </span>
       </div>
       <div
