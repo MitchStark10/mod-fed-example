@@ -1,8 +1,8 @@
 # Example Host/Remote connection with React
 
 ## Prerequisites
-Node 18.x.x or later version
-Yarn classic 1.22.5 or 2.x.x preferred
+- Node 18.x.x or later version
+- Yarn classic 1.22.5 or 2.x.x preferred
 
 ## How to install/run:
 - Open up `app1` and `app2` in separate terminals.
