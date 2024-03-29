@@ -1,4 +1,4 @@
-Example Host/Remote connection with React
+# Example Host/Remote connection with React
 
 How to install/run:
 - Open up `app1` and `app2` in separate terminals.
