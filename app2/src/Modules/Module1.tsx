@@ -7,14 +7,8 @@ const Module1DeepLinkContent = memo(() => {
   console.log("Module1DeepLinkContent rendered");
   return (
     <div>
-      <p style={{ marginBottom: "8px" }}>Hello from Module1 deep link</p>
-      <Link
-        to="/module1"
-        style={{
-          border: "1px solid black",
-          padding: "8px",
-        }}
-      >
+      <p className="mb-6">Hello from Module1 deep link</p>
+      <Link className="border border-black p-4" to="/module1">
         Go back to Module1 base content
       </Link>
     </div>
@@ -26,19 +20,12 @@ const Module1BaseContent = memo(() => {
 
   return (
     <div>
-      <p style={{ marginBottom: "8px" }}>Hello from Module1</p>
-      <Link
-        style={{
-          border: "1px solid black",
-          padding: "8px",
-          marginRight: "8px",
-        }}
-        to="/module1/deeplink"
-      >
+      <p className="mb-6">Hello from Module1</p>
+      <Link className="border border-black p-4 mr-2" to="/module1/deeplink">
         Click here to try deep linking!
       </Link>
 
-      <Link style={{ border: "1px solid black", padding: "8px" }} to="/module2">
+      <Link className="border border-black p-4" to="/module2">
         Click here to try navigating across modules
       </Link>
     </div>

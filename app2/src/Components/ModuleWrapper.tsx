@@ -1,4 +1,5 @@
 import { FC, useEffect } from "react";
+import "../Styles/tailwind.css";
 
 export interface RemoteModuleProps {
   accessToken: string;
@@ -14,5 +15,5 @@ export const ModuleWrapper: FC<RemoteModuleProps> = ({
     console.log("Recevied access token in remote:", accessToken);
   }, [accessToken]);
 
-  return <div className="p-6">{children}</div>;
+  return <div className="p-4">{children}</div>;
 };
