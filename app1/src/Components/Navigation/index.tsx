@@ -1,5 +1,5 @@
 import classnames from "classnames";
-import { useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 const Navigation = ({ accessToken }) => {
   const location = useLocation();
@@ -17,19 +17,19 @@ const Navigation = ({ accessToken }) => {
         )}
       >
         <div className="text-sm">
-          <a
-            href="/"
+          <Link
+            to="/"
             className={classnames(
               "block mt-4 lg:inline-block lg:mt-0 text-green-200 hover:text-white mr-4",
               { underline: location.pathname === "/" }
             )}
           >
             Home
-          </a>
+          </Link>
         </div>
         <div className="text-sm ">
-          <a
-            href="/module1"
+          <Link
+            to="/module1"
             className={classnames(
               "block mt-4 lg:inline-block lg:mt-0 text-green-200 hover:text-white mr-4",
               {
@@ -38,12 +38,12 @@ const Navigation = ({ accessToken }) => {
             )}
           >
             Module 1
-          </a>
+          </Link>
         </div>
 
         <div className="text-sm ">
-          <a
-            href="/module2"
+          <Link
+            to="/module2"
             className={classnames(
               "block mt-4 lg:inline-block lg:mt-0 text-green-200 hover:text-white mr-4",
               {
@@ -52,7 +52,7 @@ const Navigation = ({ accessToken }) => {
             )}
           >
             Module 2
-          </a>
+          </Link>
         </div>
       </div>
     </nav>

@@ -4,7 +4,6 @@ import "../Styles/tailwind.css";
 export interface RemoteModuleProps {
   accessToken: string;
   children: React.ReactNode;
-  basePathName: string;
 }
 
 export const ModuleWrapper: FC<RemoteModuleProps> = ({
