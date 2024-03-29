@@ -29,7 +29,7 @@ const App = () => {
             element={<Module1 accessToken={accessToken} />}
           />
           <Route
-            path="module2"
+            path="module2/*"
             element={<Module2 accessToken={accessToken} />}
           />
           <Route path="/" element={<Home />} />
