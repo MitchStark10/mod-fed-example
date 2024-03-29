@@ -1,14 +1,17 @@
 # Example Host/Remote connection with React
 
-How to install/run:
+## Prerequisites
+Node 18.x.x or later version
+Yarn classic 1.22.5 or 2.x.x preferred
+
+## How to install/run:
 - Open up `app1` and `app2` in separate terminals.
 - Run `yarn` in both directories.
 - Run `yarn start` in both directories.
 - Navigate to `http://localhost:3000` in your browser.
 
-Key Files:
-- `app1/src/App.tsx` - Host entry point that handles routing. Note the use of wildcard paths to ensure
-  that the remote can have access to deep links on that given path.
+## Key Files:
+- `app1/src/App.tsx` - Host entry point that handles routing. Note the use of wildcard paths to ensure that the remote can have access to deep links on that given path.
 - `app2/src/Components/ModuleWrapper.tsx` - Wrapper component for all remotes that handles the receiveing of the access token. The useEffect in that file detects changes to the access token and allows the remote to decide how to share the updated access token.
 - `app2/src/Modules/Module1.tsx` - Remote module that provides an example of using deep linking, and how to link across modules using the parent's router.
 - `app2/src/Modules/Module2.tsx` - Remote module that provides a basic example of nested content.
